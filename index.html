@@ -39,8 +39,12 @@
         <input type="number" id="score2" placeholder="Enter second score (0–100)" min="0" max="100" class="form-control mb-3">
         <button class="btn btn-primary" py-click="get_average" id="computebtn">Calculate Average</button>
         <!-- This is where the result will be displayed -->
+        <div id="get_average"></div>
         <div id="result" class="mt-3 fw-bold"></div>
+        
     </div>
+
+
 
     <!-- Link to the Python script, this links the index to main.py -->
     <py-script src="main.py"></py-script>
