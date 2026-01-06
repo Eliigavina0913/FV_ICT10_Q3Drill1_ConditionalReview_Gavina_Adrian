@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Drill#1</title>
+
+    
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.8.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    
+    <!-- Bootstrap CSS-->
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 600px;
+            max-height: 600px;
+            background: white;
+            padding: 26px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+    </style>
+</head>
+<body>
+
+    <br><br>
+    <!--this is where we contain the code in one block-->
+    <div class="container text-center mt-5">
+        <h1>Simple Calculator</h1>
+        <br>
+
+        <!--this is where the input fields are placed or where the user will enter their data-->
+        <input type="number" id="score1" placeholder="Enter first score (0–100)" min="0" max="100" class="form-control mb-2">
+        <input type="number" id="score2" placeholder="Enter second score (0–100)" min="0" max="100" class="form-control mb-3">
+        <button class="btn btn-primary" py-click="get_average" id="computebtn">Calculate Average</button>
+        <!-- This is where the result will be displayed -->
+        <div id="result" class="mt-3 fw-bold"></div>
+    </div>
+
+    <!-- Link to the Python script, this links the index to main.py -->
+    <py-script src="main.py"></py-script>
+</body>
+</html>
